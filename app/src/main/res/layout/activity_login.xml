@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTurknet"
+    android:orientation="vertical"
+    tools:context=".Activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="85dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:id="@+id/imgLogin"
+            android:src="@drawable/check"/>
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/usersmall"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="Kullanıcı Adı"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="caner.dikkollu"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="Parola"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="1qaz2WSX"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="8dp">
+
+            <CheckBox
+                android:id="@+id/cbShowHidePass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Parolayı Göster"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/loginbutton_selector"
+            android:padding="3dp"
+            android:text="GİRİŞ Yap"
+            android:textColor="#009688"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
